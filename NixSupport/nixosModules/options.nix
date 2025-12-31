@@ -96,5 +96,9 @@ with lib;
             type = types.str;
             default = "-A96m -n4m -N";
         };
+
+        environmentFilePath = mkOption {
+            type = types.str;
+        };
     };
 }

@@ -16,6 +16,7 @@ in
             KillSignal = "SIGINT";
             WatchdogSec = "60";
             Sockets = "app.socket";
+            serviceConfig.EnvironmentFile = cfg.environmentFilePath;
         };
         environment =
             let
