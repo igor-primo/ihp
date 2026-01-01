@@ -12,6 +12,8 @@ in
             Restart = "always";
             WorkingDirectory = "${cfg.package}/lib";
             ExecStart = "${cfg.package}/bin/RunJobs";
+        } // lib.optionalAttrs (cfg.environmentFilePath != []) {
+          EnvironmentFile = cfg.environmentFilePath;
         };
         environment =
             let
