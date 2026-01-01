@@ -98,7 +98,7 @@ with lib;
         };
 
         environmentFilePath = mkOption {
-            type = types.str;
+            type = types.listOf types.path;
         };
     };
 }
