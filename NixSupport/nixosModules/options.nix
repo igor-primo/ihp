@@ -99,6 +99,7 @@ with lib;
 
         environmentFilePath = mkOption {
             type = types.listOf types.path;
+            default = [];
         };
     };
 }
