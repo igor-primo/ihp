@@ -17,6 +17,8 @@ in
             WatchdogSec = "60";
             Sockets = "app.socket";
             EnvironmentFile = cfg.environmentFilePath;
+        } // lib.optionalAttrs (cfg.environmentFilePath != []) {
+          EnvironmentFile = cfg.environmentFilePath;
         };
         environment =
             let
