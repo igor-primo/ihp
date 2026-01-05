@@ -245,6 +245,7 @@ ihpFlake:
                 '';
 
                 processes.ihp.exec = "start";
+                process.implementation = "overmind";
 
                 # Disabled for now
                 # Can be re-enabled once postgres is provided by devenv instead of IHP
